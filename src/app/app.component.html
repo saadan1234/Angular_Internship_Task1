@@ -1,0 +1,9 @@
+<div class="app-container">
+  <app-todo-add (newTask)="addTask($event)"></app-todo-add>
+  <app-todo-search (searchQuery)="filterTasks($event)"></app-todo-search>
+  <app-todo-list
+    [tasks]="filteredTasks"
+    (editTask)="editTask($event)"
+    (deleteTask)="deleteTask($event)"
+  ></app-todo-list>
+</div>
