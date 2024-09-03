@@ -1,3 +1,4 @@
+// Server side rendering when required
 import { NgModule } from '@angular/core';
 import { ServerModule } from '@angular/platform-server';
 

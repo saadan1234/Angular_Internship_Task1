@@ -1,6 +1,10 @@
-<div class="app-container">
+<!-- Main wrapper for the app -->
+<div class=" app-container ">
+  <!-- Event Binding custom newTask triggers addTask Function, newTask contains the event details. -->
   <app-todo-add (newTask)="addTask($event)"></app-todo-add>
+  <!-- Event binding custom searchQuery function triggers filterTask with the event details -->
   <app-todo-search (searchQuery)="filterTasks($event)"></app-todo-search>
+  
   <app-todo-list
     [tasks]="filteredTasks"
     (editTask)="editTask($event)"
